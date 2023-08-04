@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sejjei lojin</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="location" href="new.html">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">SEGGEI LOJIN</h1>
+		<form class="login_form" action="brnd.html" method="post" name="form">
+			<div class="font">Email or Phone </div> 
+			<i class="fas fa-user"></i>
+			<input autocomplete="off" type="email" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<i class="fas fa-user"></i>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<button class="login-btn" onclick="func()">Login</button>
+		</form>
+	</div>	
+	<script>
+		function func(){
+		var email = document.getElementById("email").value;
+		var email = document.getElementById("password").value;
+		if (condition_email == 'Munif123@gmail.com' && password == 'Ahmad123'){
+			alert("sukkes")
+			window.location.href="brnd.html";
+		}
+		else {
+			alert("salah coy")
+		}
+	}
+	</script>
+</body>
+</html>
