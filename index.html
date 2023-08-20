@@ -48,8 +48,15 @@ https://www.tooplate.com/view/2117-infinite-loop
                   <a class="nav-link tm-nav-link" href="#contact">Hubungi</a>
               </li>  
                <li class="nav-item">
-                <a href="#whatwedo" class="nav-link tm-nav-link" >Realm</a>
-            </li>    
+                <a class="nav-link tm-nav-link active" id="realm-link" href="https://flistzx.github.io/SR/">Realm</a>
+              </li>
+              <script>
+                var realmLink = document.getElementById('realm-link');
+                realmLink.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  window.location.href = 'https://flistzx.github.io/SR/';
+                });
+              </script>  
             </ul>
           </div>        
         </div>
