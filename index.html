@@ -540,5 +540,32 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
       });
     </script>
+  <script>
+    
+  document.addEventListener('DOMContentLoaded', function() {
+    showNotification();
+  });
+  
+  function showNotification() {
+    if ('Notification' in window) {
+      Notification.requestPermission().then(function(permission) {
+        if (permission === 'granted') {
+          var options = {
+            body: 'Realm Sekkei Reborn akan hadir sebentar lagi..',
+            icon: 'path_to_your_icon.png',
+            data: {
+              url: 'https://flistzx.github.io/SR/',
+              additionalContent: 'Ini adalah konten tambahan dalam notifikasi.'
+            }
+          };
+            var notification = new Notification('Notifikasi Web', options);
+            notification.onclick = function() {
+              window.open(notification.data.url, '_blank');
+            };
+          }
+        });
+      }
+    }
+  </script>
   </body>
 </html>
