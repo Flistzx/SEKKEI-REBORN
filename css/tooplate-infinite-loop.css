@@ -280,8 +280,8 @@ blockquote {
 
 @media (max-width: 991px) {
   #testimonials {
-    background-image: url(../img/infinite-loop-2-mobile.jpg);
-     background-size: auto;
+  background-image: url(../img/infinite-loop-2-mobile.jpg);
+  background-size: auto;
   background-repeat: repeat-y;
   background-size: 100%;
   position: relative;
