@@ -269,16 +269,25 @@ blockquote {
 #testimonials {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-y;
   background-size: 100%;
   position: relative;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  background-position: center center;
 }
 
 @media (max-width: 991px) {
   #testimonials {
     background-image: url(../img/infinite-loop-2-mobile.jpeg);
-    background-repeat: repeat-y;
+     background-size: auto;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  background-position: center center;
   }
 }
 
