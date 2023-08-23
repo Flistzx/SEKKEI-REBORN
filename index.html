@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
 <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop
@@ -156,45 +157,30 @@ https://www.tooplate.com/view/2117-infinite-loop
       
     </section>
     
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
+       <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
       <div class="container tm-testimonials-content">
         <div class="row">
           <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">Tanggapan dan respon</h2>
-            <p class="mx-auto tm-section-desc text-center">
-                Untuk meyakinkan bagi yang berminat ingin bergabug tapi bingung apakah cocok atau tidak, silahkan lihat dan baca tanggapan dari orang terkemuka yang pernah join SEKKEI REBORN
-              </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-01.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Good for being Banned by Admin</blockquote>
-                  <figcaption>Steve's Head (Griefer)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Ketika Admin TP semuanya ke Lava, bro aku kepanasan</blockquote>
-                  <figcaption>Steve's Body (Normal Player)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-03.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Sering dibuat mukul</blockquote>
-                  <figcaption>Right Arm's of Steve(Normal Player)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-04.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Sampinggg.</blockquote>
-                  <figcaption>Left Arm's of Steve (Designer)</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Njirr gw komen lagi.</blockquote>
-                  <figcaption>Steve's Body (Normal Player)</figcaption>
-                </figure>
+            <h2 class="text-white text-center mb-4 tm-section-title"><strong>TENTANG SEKKEI</strong></h2>
+            <div class="row content">
+              <div class="col-lg-6">
+                <p>
+                  Kompetensi SEKKEI :
+                </p>
+                <ul>
+                  <li> Realm</li>
+                  <li> Komunitas</li>
+                  <li> Kejuaraan</li>
+                  <li> Events</li>
+                  <li> Game & Sosial</li>
+                </ul>
+              </div>
+           
+            <p class="mx-auto tm-section-desc" >
+              SEKKEI REBORN adalah sebuah komunitas yang didirikan pada tahun 2018 oleh <strong>ZULVAN</strong> sebagai Founder sekaligus Admin pada masa itu.
+              Sebelum beranjak ke ranah realm, Sekkei Reborn hanya mengandalkan MCPE Master untuk bermain secara multiplayer. Dengan harapan bahwa sekkei bisa terus berjaya dan menjadi komunitas yang besar, solid, dan kreatif.
+              Visi Misi Sekkei adalah menciptakan Minecrafter sebagai Individu yang Kreatif, Tangguh dan Berjiwa Gotong-Royong.
+            </p>
               </div>
             </div>
           </div>
@@ -540,32 +526,5 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
       });
     </script>
-  <script>
-    
-  document.addEventListener('DOMContentLoaded', function() {
-    showNotification();
-  });
-  
-  function showNotification() {
-    if ('Notification' in window) {
-      Notification.requestPermission().then(function(permission) {
-        if (permission === 'granted') {
-          var options = {
-            body: 'Realm Sekkei Reborn akan hadir sebentar lagi..',
-            icon: 'path_to_your_icon.png',
-            data: {
-              url: 'https://flistzx.github.io/SR/',
-              additionalContent: 'Ini adalah konten tambahan dalam notifikasi.'
-            }
-          };
-            var notification = new Notification('Notifikasi Web', options);
-            notification.onclick = function() {
-              window.open(notification.data.url, '_blank');
-            };
-          }
-        });
-      }
-    }
-  </script>
   </body>
 </html>
