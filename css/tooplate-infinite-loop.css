@@ -198,28 +198,7 @@ blockquote {
     display: block;
   }
 
-  .mobile-nav-show {
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    line-height: 0;
-    transition: 0.5s;
-    z-index: 9999;
-    margin: 0 10px 0 10px;
-  }
-
-  .mobile-nav-hide {
-    color: #fff;
-    font-size: 32px;
-    cursor: pointer;
-    line-height: 0;
-    transition: 0.5s;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    z-index: 9999;
-  }
-
+ 
   .mobile-nav-active {
     overflow: hidden;
   }
