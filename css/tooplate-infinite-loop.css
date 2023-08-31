@@ -277,18 +277,6 @@ blockquote {
   padding-top: 50px;
   background-position: center center;
 }
-@media (max-width: 1279px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    max-width: 400px;
-    bottom: 0;
-    transition: 0.3s;
-    z-index: 9997;
-  }
-
   .navbar ul {
     position: absolute;
     inset: 0;
