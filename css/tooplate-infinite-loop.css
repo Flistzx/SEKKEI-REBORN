@@ -80,7 +80,7 @@ blockquote {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: #404040;
   transition: all 0.3s ease;
 }
 
