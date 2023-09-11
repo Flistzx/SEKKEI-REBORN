@@ -484,43 +484,35 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
 
         // Gallery
+       <!-- Tambahkan script slick-carousel sebelum script Anda -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- Tambahkan script berikut di bawah script Anda -->
+<script>
+    $(document).ready(function () {
         $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+            dots: true,
+            infinite: false,
+            slidesToShow: 4, // Menampilkan 4 gambar dalam satu baris
+            slidesToScroll: 4, // Menggulir 4 gambar setiap kali
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
         });
-      });
-    </script>
+    });
+</script>
   </body>
 </html>
